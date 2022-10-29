@@ -17,6 +17,16 @@ namespace Final.Models
         [Column(TypeName = "nvarchar(15)")]
         public string Type { get; set; } = "Purposeful";
 
+        [NotMapped]
+        public string? TitleWithIcon
+        {
+            get
+            {
+                return this.Icon + " " + this.Title;
+            }
+          
+        }
+
     }
     
 }
