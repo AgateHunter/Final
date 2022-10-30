@@ -30,6 +30,16 @@ body {
 
 }
 
+.main-content{
+    margin-left: 290px;
+}
+
+/*Breadcrumb*/
+.e-breadcrumb a, .e-breadcrumb a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
 /*Button*/
 .btn:focus, .btn:active{
     outline:none !important;
@@ -115,6 +125,36 @@ body {
     border-bottom-right-radius: 5px;
 }
 
+/*Navbar*/
+nav.navbar {
+    background-color: rgba(18, 22, 29);
+}
+
+    nav.navbar i {
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+        nav.navbar i:hover, nav.navbar img:hover {
+            cursor: pointer;
+            background-color: #48545f14;
+            transform: scale(1.05) translateZ(0px);
+        }
+
+nav.navbar {
+    margin-left: 290px;
+}
+
+
+/*Profile Pic*/
+img.profile-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
 /*Radio Button Group*/
 .e-btn-group.custom-rbt-group {
     width: 100%;
@@ -137,6 +177,14 @@ body {
     border: 1px solid #fff;
 }
 
+/*SideBar*/
+#sidebar{
+background-color:#12161d;
+border-right: 1px dashed rgba(75,82,85,0.24);
+padding:10px 20px;
+}
+
+
 
 /*Widget*/
 .widget {
@@ -154,16 +202,18 @@ body {
         .widget.summary > div:first-child i {
             font-weight: bold;
         }
-
-    .widget.income > div:first-child {
+    /*Don't forget to change the color*/
+    .widget.purposeful > div:first-child {
         color: #65da41;
     }
 
-    .widget.expense > div:first-child {
+    /*Don't forget to change the color*/
+    .widget.aimless > div:first-child {
         color: #ff4e48;
     }
 
-    .widget.balance > div:first-child {
+    /*Don't forget to change the color*/
+    .widget.battery > div:first-child {
         color: #2aa1ff;
     }
 

@@ -1,7 +1,10 @@
 ﻿@model IEnumerable<Final.Models.Category>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["PageTitle"] = "Activities";
+    ViewData["PageActionText"] = "+ New Activity";
+    ViewData["PageActionUrl"] = "/Category/AddOrEdit";
+
 }
 
 
@@ -11,14 +14,14 @@
          allowSorting="true" allowPaging="true">
          <e-grid-pagesettings pageSize="5"></e-grid-pagesettings>
             <e-grid-columns>
-                <e-grid-column headerText="Category" field="TitleWithIcon"></e-grid-column>
+                <e-grid-column headerText="Activity" field="TitleWithIcon"></e-grid-column>
                 <e-grid-column headerText="Type" template="#typeColumnTemplate" width="150px"></e-grid-column>
                 <e-grid-column headerText="Actions" template="#actionColumnTemplate"width="100px"></e-grid-column>
             </e-grid-columns>
         </ejs-grid>
     </div>
     <div class="col-md-5">
-        <div class="widget h-100 d-flex justify-content-center align-items-center" style="background-color:#212b36">
+        <div class="widget h-100 d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-icons fa-2xl"></i>
         </div>
     </div>
